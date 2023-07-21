@@ -1,14 +1,6 @@
 {
     "name": "holdon1996/laravel_microscope_custom",
     "description": "Automatically test your laravel application",
-    "autoload": {
-        "files": [
-            "src/helpers.php"
-        ],
-        "psr-4": {
-            "Imanghafoori\\LaravelMicroscopeCustom\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "holdon1996",
@@ -29,6 +21,14 @@
     "require-dev": {
         "orchestra/testbench": "^7.0",
         "phpunit/phpunit": "^9.5.20"
+    },
+     "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Imanghafoori\\LaravelMicroscope\\": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
