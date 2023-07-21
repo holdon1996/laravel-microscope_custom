@@ -1,11 +1,11 @@
 {
-    "name": "imanghafoori/laravel-microscope",
+    "name": "holdon1996/laravel_microscope_custom",
     "description": "Automatically test your laravel application",
     "keywords": [
         "laravel-testing",
         "laravel-microscope"
     ],
-    "homepage": "https://github.com/imanghafoori1/laravel-microscope",
+    "homepage": "https://github.com/holdon1996/laravel-microscope_custom",
     "license": "MIT",
     "type": "library",
     "authors": [
