@@ -27,9 +27,11 @@ class ForPsr4LoadedClasses
                 foreach ((array) $psr4Paths as $psr4Path) {
                     foreach (FilePath::getAllPhpFiles($psr4Path) as $phpFilePath) {
                         $absFilePath = $phpFilePath->getRealPath();
+                        $absFilePath = str_replace('\\', '/', $absFilePath);
                         if (! FilePath::contains($absFilePath, $includeFile, $includeFolder)) {
                             continue;
                         }
+
                         $stats[$composerPath][$psr4Namespace][$psr4Path] = 1 + ($stats[$composerPath][$psr4Namespace][$psr4Path] ?? 0);
                         self::$checkedFilesNum++;
                         $tokens = token_get_all(file_get_contents($absFilePath));
